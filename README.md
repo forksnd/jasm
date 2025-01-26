@@ -9,6 +9,19 @@ disassemble any Java `.class` file to JASM source code.
 JASM has a [Gradle plugin](https://github.com/roscopeco/jasm-gradle-plugin) and 
 a (WIP) [Plugin for IntelliJ](https://github.com/roscopeco/jasm-intellij-plugin).
 
+> [!NOTE]
+> The IntelliJ plugin is not currently being maintained, I just can't keep
+> up with the pace of change or dedicate the time to maintaining it.
+>
+> Unless someone wants to step up and take it over, the recommended way
+> to write JASM code is in Vim - by adding the following line to your
+> `.vimrc` you can get _reasonable_ auto-indent and _some_ syntax highlighting
+> (because Jasm syntax is pretty close to Java 😅).
+>
+> ```
+> au BufRead,BufNewFile *.jasm set filetype=java
+> ```
+
 See the [Example Gradle project](https://github.com/roscopeco/jasm-example) for
 an example of how JASM might fit in to your project.
 
